@@ -13,14 +13,7 @@ const UploadForm = () => {
   //   set error
   const [error, setError] = useState(null);
   //   set valid image types
-  const types = [
-    "application/pdf",
-    "application/docx",
-    ".pdf",
-    "image/pdf",
-    "image/jpeg",
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-  ];
+  const types = ["image/png", "image/jpeg"];
 
   // on file upload handler
   const changeHandler = (e) => {
@@ -33,7 +26,7 @@ const UploadForm = () => {
     } else {
       // reset file
       setFile(null);
-      setError(`Error. Allowed formats: '.pdf' or '.docx'`);
+      setError(`Error. Allowed formats: image/png and image/jpeg`);
     }
   };
 

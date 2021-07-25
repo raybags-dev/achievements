@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ImageGrid = ({ setSelectedImg }) => {
   // get all images in database
-  const { docs } = useFirestore("images");
+  const { docs } = useFirestore("achievements");
 
   return (
     <div className="img-grid">
@@ -24,7 +24,7 @@ const ImageGrid = ({ setSelectedImg }) => {
               alt="upload document"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{delay: 1}}
+              transition={{ delay: 1 }}
             />
           </motion.div>
         ))}
