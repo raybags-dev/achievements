@@ -17,6 +17,8 @@ const UploadForm = () => {
     "application/pdf",
     "application/docx",
     ".pdf",
+    "image/pdf",
+    "image/jpeg",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   ];
 
